@@ -1,5 +1,10 @@
 @import url('./modern-normalize.css');
 
+:root {
+  --backdrop: rgb(46, 47, 66);
+  --primary-color: rgb(255, 255, 255);
+}
+
 body {
   padding: 24px;
 }
@@ -39,4 +44,15 @@ ul {
   .gallery-link:hover {
     transform: scale(1.05);
   }
+}
+
+.sl-overlay {
+  background-color: var(--backdrop);
+}
+
+.simple-lightbox .sl-counter,
+.simple-lightbox .sl-close,
+.simple-lightbox .sl-navigation .sl-prev,
+.simple-lightbox .sl-navigation .sl-next {
+  color: var(--primary-color);
 }
