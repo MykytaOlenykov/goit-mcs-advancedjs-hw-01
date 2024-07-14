@@ -4,9 +4,9 @@ const FEEDBACK_FORM_LS_KEY = 'feedback-form-state';
 
 const feedbackFormRef = document.querySelector('.feedback-form');
 
-const DEFAULT_FROM_DATA = { email: '', message: '' };
+const DEFAULT_FORM_DATA = { email: '', message: '' };
 
-let formData = initializeFormData(DEFAULT_FROM_DATA, FEEDBACK_FORM_LS_KEY);
+let formData = initializeFormData(DEFAULT_FORM_DATA, FEEDBACK_FORM_LS_KEY);
 
 initializeFormTextFields(feedbackFormRef, formData);
 
@@ -31,7 +31,7 @@ feedbackFormRef.addEventListener('submit', e => {
 
   e.currentTarget.reset();
   window.localStorage.removeItem(FEEDBACK_FORM_LS_KEY);
-  formData = { ...DEFAULT_FROM_DATA };
+  formData = { ...DEFAULT_FORM_DATA };
 });
 
 function initializeFormData(defaultFormData, lsKey) {
