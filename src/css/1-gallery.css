@@ -16,6 +16,16 @@ ul {
   list-style: none;
 }
 
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.go-back {
+  display: block;
+  margin-bottom: 16px;
+}
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

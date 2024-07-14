@@ -28,6 +28,11 @@ a {
   text-decoration: none;
 }
 
+.go-back {
+  display: block;
+  margin-bottom: 16px;
+}
+
 .feedback-form {
   padding: 24px;
   max-width: 408px;
